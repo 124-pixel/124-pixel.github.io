@@ -1,0 +1,1221 @@
+@font-face {
+    font-family: 'LuloCleanBold';
+    src: url('/fonts/FontsFree-Net-Lulo-Clean-W01-One-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color1: #ae9a64;
+    --color2: #323232;
+    --color3: #FFFFFF;
+    --color4: #28a745;
+    --color5: #c82b2b;
+    --color6: #FFB936;
+    --color7: #EC3D08;
+}
+
+body {
+    margin: 0;
+    color: #ffffff;
+}
+
+.header {
+    background-image: url('galery/pruebaultima.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    background-attachment: fixed;
+    height: 65rem;
+    /* Hace que la imagen de fondo se quede fija */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #af9b62;
+    padding: 20px 50px;
+    font-size: 10.5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s ease;
+    z-index: 3;
+    height: 30px;
+}
+
+/* Estilos del logo y nombre de la web */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    /* Ajusta el tamaño del logo según tus preferencias */
+}
+
+.logo .site-name {
+    font-size: 12px;
+    font-family: 'LuloCleanBold';
+    letter-spacing: -0.1rem;
+    color: #333333;
+    margin-left: 10px;
+    /* Espacio entre el logo y el nombre */
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    gap: 0.6rem;
+}
+
+.navbar ul li {
+    margin-right: 23px;
+    font-family: 'LuloCleanBold';
+    font-size: 10px;
+    max-width: 640px;
+}
+
+.navbar ul li a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+}
+
+.login a {
+    color: #333333;
+    text-decoration: none;
+    font-family: 'LuloCleanBold';
+    font-size: 0.6rem;
+    margin-right: 10rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.login a:hover {
+    color: #FFFFFF;
+}
+
+.hero {
+    padding: 300px 0px;
+    text-align: left;
+    /* Alinea el texto hacia la izquierda */
+}
+
+.hero h1 {
+    font-size: 110px;
+    margin: 0 140px;
+    font-weight: 580;
+    font-family: 'LuloCleanBold';
+    text-align: center right;
+    /* Alinea el h1 hacia la izquierda */
+}
+
+.hero p {
+    font-size: 16px;
+    margin: 10px 0 20px;
+    font-weight: 900;
+    margin-top: 0.4rem;
+    max-width: 550px;
+    margin-left: 150px;
+    font-family: 'LuloCleanBold';
+}
+
+.btn {
+    display: inline-block;
+    padding: 9px 50px;
+    background-color: #ae9a64;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px 150px;
+    /* Alinea el botón hacia la izquierda */
+    font-family: 'LuloCleanBold';
+}
+
+
+
+
+.espacio {
+    background-color: rgb(49, 49, 49);
+    padding: 5.5px 50px;
+    font-size: 15px;
+    font-family: 'Georgia', 'Palatino', 'Book Antiqua', serif;
+    color: var(--color1);
+    position: fixed;
+    width: 100%;
+    top: 62px;
+    z-index: 3;
+
+}
+
+.espacio a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.espacio span {
+    margin-right: 5rem;
+}
+
+
+/* Imagen de separación */
+.division-rara {
+    position: absolute;
+    bottom: 0;
+    /* Alinea la imagen al fondo del contenedor principal */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.division-rara img {
+    width: 100%;
+    max-width: 2000px;
+    /* Ajusta el ancho máximo de la imagen */
+    height: auto;
+
+}
+
+
+
+
+/*section about*/
+.about-us {
+    background-color: #FFFFFF;
+    padding: 40px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+    height: 47rem;
+
+}
+
+.text-section h2 {
+    color: #c82b2b;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: 'LuloCleanBold';
+}
+
+.text-section h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+    font-family: 'LuloCleanBold';
+}
+
+.text-section p {
+    font-size: 18px;
+    color: #5f5f5f;
+    margin-bottom: 40px;
+    max-width: 700px;
+    font-family: 'Georgia', 'Palatino', 'Book Antiqua', serif;
+}
+
+.images-section {
+    display: grid;
+    gap: 10px;
+}
+
+.burger-image {
+    width: 270px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+
+.burger-image2 {
+    width: 270px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.burger-image3 {
+    grid-row: 1 / 3;
+    /* Ocupa las dos filas */
+    grid-column: 2 / 3;
+    /* Segunda columna */
+    width: 300px;
+    /* Ajusta este tamaño según tus preferencias */
+    height: 410px;
+    /* Ajusta según el contenido */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.feature-item {
+    text-align: center right;
+    font-size: 16px;
+    margin-top: -4.5rem;
+}
+
+
+.green-circle {
+    background-color: #28a745;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+
+.descrip {
+    color: #323232;
+    font-family: 'Georgia', 'Palatino', 'Book Antiqua', serif;
+}
+
+
+/*section video*/
+.section-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+}
+
+.text-video {
+    color: black;
+    max-width: 700px;
+    margin: 50px;
+    padding: 40px;
+    background-color: #FFFFFF;
+    width: 50rem;
+    height: 20rem;
+    box-shadow: 0 10px 10px rgb(196, 188, 174);
+}
+
+.text-video h1 {
+    font-family: 'LuloCleanBold';
+    font-size: 50px;
+    margin-top: -5px;
+}
+
+.text-video p {
+    font-size: 17px;
+    font-family: 'Georgia', 'Palatino', 'Book Antiqua', serif;
+}
+
+.video video {
+    width: 930px;
+}
+
+
+
+/*section de servicios*/
+.servicios {
+    padding: 50px 20px;
+    text-align: center;
+    height: 41rem;
+    margin-top: -10px;
+}
+
+.text-servicio {
+    color: var(--color2);
+}
+
+.text-servicio h1 {
+    font-family: 'LuloCleanBold';
+}
+
+.text-servicio p {
+    max-width: 850px;
+    margin: 0 auto;
+    /* Centra el párrafo horizontalmente */
+    padding: 30px;
+    text-align: center;
+    /* Centra el texto dentro del párrafo */
+}
+
+.container-servicio {
+    display: flex;
+    margin: 0px 140px;
+    gap: 10px;
+    color: var(--color2);
+}
+
+.caja {
+    background-color: #FFFFFF;
+    margin: 20px;
+    padding: 60px;
+    flex: 1;
+    box-sizing: border-box;
+    margin-top: -10px;
+}
+
+.caja h3 {
+    font-family: 'LuloCleanBold';
+    font-size: 15px;
+}
+
+.btn-servicio {
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.btn-servicio:hover {
+    background-color: red;
+    border: none;
+    color: white;
+}
+
+.caja-icono {
+    background-color: #FFFFFF;
+    padding: 50px;
+    margin: 20px;
+    transition: 0.6s ease;
+    color: red;
+    box-shadow: 0 10px 10px rgb(196, 188, 174);
+}
+
+.caja-icono:hover {
+    background-color: red;
+}
+
+.caja-icono:hover i {
+    color: white;
+}
+
+
+/*div division*/
+.division {
+    background-color: #FFFFFF;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    position: relative;
+    /* Necesario para que el pseudo-elemento se posicione en relación con .division */
+    margin-top: 50px;
+
+}
+
+
+.division h2 {
+    color: #323232;
+    font-size: 30px;
+    font-family: 'LuloCleanBold', sans-serif;
+
+}
+
+
+/*section combo*/
+.section-combo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 30rem;
+}
+
+.image-combo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.combo-item {
+    position: relative;
+    display: inline-block;
+}
+
+.combo-item img {
+    height: 350px;
+    /* Ajusta el tamaño a tus necesidades */
+    width: 590px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.combo-text {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    /* Cambié 'right' a 'left' para más control sobre el flujo del texto */
+    color: white;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    /* Cambié el texto a la izquierda para mejorar el ajuste */
+    max-width: 220px;
+    /* Establece el máximo ancho del contenedor de texto */
+}
+
+.combo-text h1 {
+    font-size: 27px;
+    max-width: 100%;
+    /* Asegura que el h1 no supere el contenedor */
+    font-family: 'LuloCleanBold';
+}
+
+.combo-text h2 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-top: -7px;
+}
+
+.combo-text p {
+    font-size: 12px;
+    padding: 10px 0px;
+    font-weight: normal;
+    margin-top: -10px;
+}
+
+.btn-combo {
+    border: none;
+    background-color: #c82b2b;
+    color: white;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+/*section mini menu*/
+.mini-menu {
+    padding: 50px 67px;
+    background-color: #FFFFFF;
+    text-align: center;
+    height: 40rem;
+}
+
+.title-menu {
+    font-family: 'LuloCleanBold';
+    color: var(--color2);
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.info-container-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.info-box {
+    text-align: center;
+    width: 300px;
+    height: 25rem;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.info-box img {
+    height: 190px;
+    width: 220px;
+    background-color: rgb(196, 188, 174);
+    border-radius: 10px;
+    padding: 10px 35px;
+    margin: 3px 4px;
+    transition: 0.5s;
+}
+
+.info-box img:hover {
+    background: var(--color5);
+}
+
+.info-box h4 {
+    margin: 10px 10px;
+    text-align: left;
+    margin-top: 20px;
+    color: #323232;
+    font-family: 'LuloCleanBold';
+    font-size: 13px;
+}
+
+.mini-menu p {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    text-align: left;
+    margin: 10px 10px;
+    line-height: 20px;
+}
+
+.mini-menu h3 {
+    font-size: 13px;
+    text-align: left;
+    margin: 10px 10px;
+    color: red;
+    margin: 30px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.btn-menu {
+    margin: 10px 0;
+    /* Controla el margen superior e inferior */
+    padding: 10px 20px;
+    background-color: var(--color5);
+    /* Puedes personalizar el color del botón */
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    /* Permite posicionar el botón dentro del contenedor */
+    bottom: 20px;
+    /* Ajusta la posición inferior del botón */
+    left: 65%;
+    /* Posiciona el botón horizontalmente */
+    border-radius: 10px;
+}
+
+
+
+/*section highlight*/
+.highlight-section {
+    background-color: #f8f9fa;
+    /* Fondo claro para que resalte la sección */
+    padding: 0;
+    /* Eliminamos el padding para que la imagen se ajuste */
+}
+
+.highlight-content {
+    display: flex;
+    justify-content: space-between;
+    height: 30rem;
+}
+
+.highlight-image {
+    flex: 1;
+    overflow: hidden;
+    /* Para que la imagen no se desborde */
+    height: 40rem;
+}
+
+.highlight-image img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    /* Hace que la imagen ocupe todo el espacio de su contenedor sin deformarse */
+}
+
+.highlight-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background-color: #FFFFFF;
+    /* Un color de fondo llamativo para la parte del texto */
+    color: #323232;
+    height: 412px;
+}
+
+.highlight-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 200px;
+    margin: 0 10px auto;
+    font-family: 'LuloCleanBold';
+    /* Fuente personalizada */
+}
+
+.highlight-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    font-family: Arial, sans-serif;
+    margin-bottom: 4rem;
+}
+
+
+
+/*section chef*/
+.culinary-masters {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #FFFFFF;
+    height: 52rem;
+}
+
+.culinary-masters h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #323232;
+    font-family: 'LuloCleanBold';
+    margin-top: 50px;
+}
+
+.chef-cards {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 70px;
+
+}
+
+
+.chef-card img {
+    width: 349px;
+    height: 550px;
+    object-fit: cover;
+}
+
+.chef-text {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #323232;
+    margin: -4px 0.5px;
+    padding: 1px;
+}
+
+
+
+
+/*section promociones*/
+.section-promociones {
+    justify-content: center;
+    width: 90.1%;
+    height: 62rem;
+}
+
+.section-promociones img {
+    width: 111%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promociones-text h1 {
+    position: absolute;
+    color: #FFB936;
+    padding: 314px 2px;
+    margin: 90px 270px;
+    font-family: 'LuloCleanBold';
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.promociones-text p {
+    position: absolute;
+    color: white;
+    max-width: 350px;
+    padding: 460px 30px;
+    margin: 0px 270px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.btn-promocion {
+    border: none;
+    position: absolute;
+    margin: 0px 405px;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    padding: 14px 21px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 48rem;
+    transition: 0.4s ease;
+}
+
+.btn-promocion:hover {
+    background-color: var(--color3);
+    color: var(--color2);
+}
+
+.seccion-contenido {
+    position: relative;
+    /* Contenedor relativo para que los elementos internos absolutos se posicionen respecto a él */
+
+}
+
+.contenedor {
+    display: flex;
+    gap: 1px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    margin: 580px 130px;
+}
+
+.item {
+    background-color: #EC3D08;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 80px;
+}
+
+.item span {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.item h4 {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/*div division rara promo*/
+.division-rara-promo {
+    position: absolute;
+    margin-top: -4.5rem;
+    z-index: 0;
+    width: 100vw;
+    max-width: 1864px;
+    /* Ajusta este valor a tus necesidades */
+    justify-content: center;
+    align-items: center;
+}
+
+.division-rara-promo img {
+    width: 100%;
+}
+
+
+
+/*section de somos*/
+.somos {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    height: 28rem;
+}
+
+/* Contenedor de texto */
+.somo-text {
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    margin-top: 5rem;
+}
+
+/* Logo de hamburguesa */
+.somoslogo img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Título */
+.somo-text h2 {
+    color: #eab71a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Descripción */
+.somo-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c42900;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 13px 0 0 0;
+    max-width: 100rem;
+}
+
+/* Imagen de fondo decorativa */
+.background-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    /* Ajusta la opacidad si deseas un efecto de fondo */
+    z-index: 0;
+}
+
+
+
+
+
+/*section de delivery*/
+.deliveryburger {
+    background-image: url('galery/peque.webp');
+    height: 49rem;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-size: 100%;
+    margin-top: 10rem;
+}
+
+
+.text-delivery {
+    color: #FFFFFF;
+    margin: 10px 10px;
+    padding: 200px 200px;
+    font-size: 2rem;
+    text-align: start;
+
+    font-weight: 800;
+    max-width: 650px;
+}
+
+.text-delivery h1 {
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: start;
+    font-family: 'LuloCleanBold';
+    /* Elimina el espacio inferior */
+}
+
+.text-delivery p {
+    margin-top: 5px;
+    font-size: 55px;
+    font-family: 'LuloCleanBold';
+    /* Reduce el espacio superior del párrafo */
+}
+
+.descripcion-delivery {
+    font-size: 12px;
+    margin-top: -14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.descripcion-delivery p {
+    font-size: 16px;
+    margin: 30px 0;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buton-delivery {
+    color: var(--color3);
+    border: 1px solid var(--color3);
+    padding: 15px 22px;
+    /* Añade relleno interno */
+    border-radius: 10px;
+
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    background-color: transparent;
+}
+
+.buton-delivery:hover {
+    background-color: var(--color3);
+    color: var(--color2);
+
+}
+
+
+/*section testimonio*/
+.testi-section {
+    text-align: center;
+    margin-top: 10rem;
+    height: 25rem;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding: 20px;
+    font-family: 'LuloCleanBold';
+}
+
+.testi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.conteiner {
+    padding: 10px;
+    margin: 60px;
+    display: flex;
+    gap: 50px;
+    border-radius: 10px;
+    max-width: 550px;
+    margin-top: 20px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.name h2 {
+    font-size: 20px;
+    margin: 10px 0 0;
+    color: var(--color1);
+    font-family: 'LuloCleanBold';
+    color: var(--color2);
+}
+
+.image-testi {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.descripcion-testi {
+    border-left: 4px solid var(--color7);
+    padding: 10px;
+}
+
+.descripcion-testi p {
+    margin: 5px 0;
+    color: var(--color2);
+}
+
+
+
+
+
+
+
+
+
+
+/*section de galeria*/
+.gallery-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    color: var(--color2);
+    margin-bottom: 40px;
+    font-family: 'LuloCleanBold';
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 91%;
+    padding-bottom: 90%;
+    justify-content: center;
+    align-items: center;
+    padding: 220px 10px;
+    object-fit: cover;
+}
+
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 85%;
+    margin-left: 50px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* Efecto de oscurecimiento y escalado en hover */
+.gallery-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(50%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Estilos para el texto de la superposición */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    pointer-events: none;
+}
+
+.gallery-item:hover .overlay-text {
+    opacity: 1;
+}
+
+
+
+/*section footer*/
+.footer {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('galery/4.png');
+    height: 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Ajusta la imagen de fondo para que cubra el área */
+    color: white;
+    overflow: hidden;
+    /* Evita que el contenido salga del footer */
+}
+
+/* Capa de color encima del fondo */
+.footer .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 29, 0.904);
+    /* Color y opacidad de la capa */
+    z-index: 1;
+    /* Ubica la capa encima de la imagen de fondo */
+}
+
+.text-footer {
+    position: relative;
+    z-index: 2;
+    /* Coloca el contenido sobre la capa */
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+}
+
+.text-footer h1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contac a {
+    text-decoration: none;
+    color: #ffffffb6;
+    /* Cambia el color del texto para que sea visible sobre el fondo oscuro */
+    transition: color 0.3s ease;
+}
+
+.contac a:hover {
+    color: #FFFFFF;
+}
+
+
+.title-footer-logo {
+    display: flex;
+    padding: 0px 70px;
+    margin-top: -26px;
+    line-height: 30px;
+}
+
+.icon {
+    font-size: 20px;
+    margin: 15px;
+    padding: 10px 10px;
+    color: #ffffff8a;
+    border: 1px solid #ffffff8a;
+    border-radius: 50%;
+    transition: color 1s ease;
+    text-decoration: none;
+}
+
+.icon:hover {
+    background-color: #FFFFFF;
+    color: black;
+
+}
+
+.salud {
+    font-weight: bold;
+}
+
+.descrip-footer {
+    color: #FFFFFF;
+    max-width: 450px;
+    margin-right: 250px;
+}
+
+.descrip-footer img {
+    width: 50px;
+}
+
+
+
+/*scroll*/
+.scroll-container {
+    padding: 10px;
+    position: fixed;
+    border: none;
+    left: 95%;
+    top: 91%;
+    z-index: 1000;
+    display: none;
+}
+.scroll-container button {
+    background-color: transparent;
+    color: var(--color7);
+    border-radius: 50%;
+    font-size: 30px;
+    border: 2px solid var(--color7);
+    cursor: pointer;
+}

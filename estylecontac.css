@@ -1,0 +1,414 @@
+@font-face {
+    font-family: 'LuloCleanBold';
+    src: url('/fonts/FontsFree-Net-Lulo-Clean-W01-One-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --color1: #ae9a64;
+    --color2: #323232;
+    --color3: #FFFFFF;
+    --color4: #28a745;
+    --color5: #c82b2b;
+    --color6: #FFB936;
+    --color7: #EC3D08;
+}
+body {
+    margin: 0;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #af9b62;
+    padding: 20px 50px;
+    font-size: 10.5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s ease;
+    z-index: 3;
+    height: 30px;
+}
+
+/* Estilos del logo y nombre de la web */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    /* Ajusta el tamaño del logo según tus preferencias */
+}
+
+.logo .site-name {
+    font-size: 12px;
+    font-family: 'LuloCleanBold';
+    letter-spacing: -0.1rem;
+    color: #333333;
+    margin-left: 10px;
+    /* Espacio entre el logo y el nombre */
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    gap: 0.6rem;
+}
+
+.navbar ul li {
+    margin-right: 23px;
+    font-family: 'LuloCleanBold';
+    font-size: 10px;
+    max-width: 640px;
+}
+
+.navbar ul li a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+}
+
+.login a {
+    color: #333333;
+    text-decoration: none;
+    font-family: 'LuloCleanBold';
+    font-size: 0.6rem;
+    margin-right: 10rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.login a:hover {
+    color: var(--color3);
+}
+
+.espacio {
+    background-color: rgb(49, 49, 49);
+    padding: 5.5px 50px;
+    font-size: 15px;
+    font-family: 'Georgia', 'Palatino', 'Book Antiqua', serif;
+    color: var(--color1);
+    position: fixed;
+    width: 100%;
+    top: 62px;
+    z-index: 3;
+    text-align: center;
+}
+
+.espacio a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.espacio span {
+    margin-right: 5rem;
+}
+
+.image-contact {
+    position: relative;
+    width: 100%;
+    height: 35rem;
+}
+
+.image-contact video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.733); /* Capa oscura semi-transparente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Asegúrate de que esté sobre la imagen */
+}
+
+.text-contact{
+    position: absolute;
+    z-index: 2;
+    font-size: 20px;
+    color: var(--color2);
+    z-index: 2;
+    top: 20%;
+    left:33%;
+    margin: 100px;
+    color: var(--color3);
+    font-family: 'LuloCleanBold';
+    text-align: center;
+}
+.text-contact i{
+    margin: 16px;
+    font-size: 44px;
+}
+.link-contact{
+    margin-top: -20px;
+}
+.link-contact a{
+    text-decoration: none;
+    margin: 10px;
+    color: var(--color3);
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+.link-contact a:hover{
+    color: var(--color5);
+}
+
+.contactanos {
+    color: var(--color2);
+    margin: 100px 300px;
+    display: flex;
+
+}
+
+.ingresar-contact {
+    display: flex;
+    flex-direction: column; /* Hace que los inputs estén en columna */
+    gap: 10px; /* Espacio entre los inputs */
+    width: 100%; /* Ajusta el ancho del contenedor si es necesario */
+    max-width: 400px; /* Ancho máximo para los inputs */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: rgb(238, 235, 235);
+    
+}
+
+.ingresar-contact h2 {
+    font-family: 'LuloCleanBold';
+}
+
+.ingresar-contact input,
+.mensaje textarea {
+    
+    width: 100%; /* Los inputs y textarea ocuparán todo el ancho del contenedor */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Ajusta el textarea para que el placeholder aparezca en la parte superior */
+.mensaje textarea {
+    height: 200px;
+    line-height: 1.5; /* Controla la altura de línea para mejor legibilidad */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-text{
+    margin-left: 180px;
+}
+.contact-text h2{
+    font-family: 'LuloCleanBold';
+    font-size: 30px;
+}
+.descrip-contact {
+    display: grid;
+grid-template-columns: 1fr 1fr;
+padding: 50px 0px;
+}
+.descrip-contact p{
+    max-width: 180px;
+    line-height: 1.5;
+}
+.descrip-contact i{
+    color: var(--color5);
+    font-size: 30px;
+}
+.descrip-contact a{
+    text-decoration: none;
+    color: var(--color2);
+}
+
+
+
+.social-bar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-bar .social-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.social-bar .social-icon i {
+    font-size: 18px;
+}
+
+.social-bar .social-icon:hover {
+    background-color: var(--color5);
+    color: white;
+    border: none;
+}
+
+
+
+
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+.map-container iframe {
+    width: 100%; /* Ajusta el ancho del mapa */
+     /* Máximo ancho para pantallas grandes */
+    height: 550px; /* Altura deseada */
+    border: 0;
+}
+
+
+
+
+
+.footer {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color2);
+    height: 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Ajusta la imagen de fondo para que cubra el área */
+    color: white;
+    overflow: hidden;
+    /* Evita que el contenido salga del footer */
+}
+
+/* Capa de color encima del fondo */
+.footer .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 29, 0.904);
+    /* Color y opacidad de la capa */
+    z-index: 1;
+    /* Ubica la capa encima de la imagen de fondo */
+}
+
+.text-footer {
+    position: relative;
+    z-index: 2;
+    /* Coloca el contenido sobre la capa */
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+}
+
+.text-footer h1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contac a {
+    text-decoration: none;
+    color: #ffffffb6;
+    /* Cambia el color del texto para que sea visible sobre el fondo oscuro */
+    transition: color 0.3s ease;
+}
+
+.contac a:hover {
+    color: #FFFFFF;
+}
+
+
+.title-footer-logo {
+    display: flex;
+    padding: 0px 70px;
+    margin-top: -26px;
+    line-height: 30px;
+}
+
+.icon {
+    font-size: 20px;
+    margin: 15px;
+    padding: 10px 10px;
+    color: #ffffff8a;
+    border: 1px solid #ffffff8a;
+    border-radius: 50%;
+    transition: color 1s ease;
+    text-decoration: none;
+}
+
+.icon:hover {
+    background-color: #FFFFFF;
+    color: black;
+
+}
+
+.salud {
+    font-weight: bold;
+}
+
+.descrip-footer {
+    color: #FFFFFF;
+    max-width: 450px;
+    margin-right: 250px;
+}
+
+.descrip-footer img {
+    width: 50px;
+}
+
+.btn-contact{
+    border: none;
+    background-color: var(--color5);
+    color: var(--color3);
+    cursor: pointer;
+    padding: 12px;
+    margin: 10px;
+    width: 180px;
+    border-radius: 5px;
+}
+
+
+
+.scroll-container {
+    padding: 10px;
+    position: fixed;
+    border: none;
+    left: 95%;
+    top: 91%;
+    z-index: 1000;
+    display: none;
+}
+.scroll-container button {
+    background-color: transparent;
+    color: var(--color7);
+    border-radius: 50%;
+    font-size: 30px;
+    border: 2px solid var(--color7);
+    cursor: pointer;
+}

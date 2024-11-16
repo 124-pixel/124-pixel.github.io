@@ -1,0 +1,462 @@
+@font-face {
+    font-family: 'LuloCleanBold';
+    src: url('/fonts/FontsFree-Net-Lulo-Clean-W01-One-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --color1: #ae9a64;
+    --color2: #323232;
+    --color3: #FFFFFF;
+    --color4: #28a745;
+    --color5: #c82b2b;
+    --color6: #FFB936;
+    --color7: #EC3D08;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #af9b62;
+    padding: 20px 50px;
+    font-size: 10.5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s ease;
+    z-index: 3;
+    height: 30px;
+}
+
+/* Estilos del logo y nombre de la web */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    /* Ajusta el tamaño del logo según tus preferencias */
+}
+
+.logo .site-name {
+    font-size: 12px;
+    font-family: 'LuloCleanBold';
+    letter-spacing: -0.1rem;
+    color: #333333;
+    margin-left: 10px;
+    /* Espacio entre el logo y el nombre */
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    gap: 0.6rem;
+}
+
+.navbar ul li {
+    margin-right: 23px;
+    font-family: 'LuloCleanBold';
+    font-size: 10px;
+    max-width: 640px;
+}
+
+.navbar ul li a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+}
+
+.login a {
+    color: #333333;
+    text-decoration: none;
+    font-family: 'LuloCleanBold';
+    font-size: 0.6rem;
+    margin-right: 10rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.login a:hover {
+    color: var(--color3);
+}
+
+.espacio {
+    background-color: rgb(49, 49, 49);
+    padding: 5.5px 50px;
+    font-size: 15px;
+    font-family: 'Georgia', 'Palatino', 'Book Antiqua', serif;
+    color: var(--color1);
+    position: fixed;
+    width: 100%;
+    top: 62px;
+    z-index: 3;
+    text-align: center;
+}
+
+.espacio a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.espacio span {
+    margin-right: 5rem;
+}
+
+
+
+.image-menu {
+    position: relative;
+    width: 100%;
+    height: 35rem;
+}
+
+.image-menu video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.733); /* Capa oscura semi-transparente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Asegúrate de que esté sobre la imagen */
+}
+
+.text-menu{
+    position: absolute;
+    z-index: 2;
+    font-size: 20px;
+    color: var(--color2);
+    z-index: 2;
+    top: 20%;
+    left:33%;
+    margin: 100px;
+    color: var(--color3);
+    font-family: 'LuloCleanBold';
+    text-align: center;
+}
+.text-menu i{
+    margin: 16px;
+    font-size: 44px;
+}
+.link-menu{
+    margin-top: -20px;
+}
+.link-menu a{
+    text-decoration: none;
+    margin: 10px;
+    color: var(--color3);
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+.link-menu a:hover{
+    color: var(--color5);
+}
+
+
+
+/*section de presentacion de el menu*/
+.calidad-menu{
+    display: flex;
+    margin: 40px 30px;
+    height: 45rem;
+    margin-top: 80px;
+}
+.imagen-burger1{
+    margin: 10px 10px;
+}
+.imagen-burger1 img{
+    height: 400px;
+    margin-left: 360px;
+}
+.imagen-burger2{
+    margin: 0px 40px;
+}
+.imagen-burger2 img{
+    height: 400px;
+    margin-top: 6rem;
+}
+.insi{
+    position: relative;
+    margin: 0px;
+    display: grid;
+}
+.insi img{
+    padding: 340px 0px;
+    right: 15rem;
+    position: absolute;
+    
+}
+.text-calidad{
+    margin: 0px 20px ;
+    color: var(--color2);
+    margin-top: 60px;
+}
+.text-calidad h2{
+    font-family: 'LuloCleanBold';
+    font-size: 13px;
+    color: var(--color7);
+}
+.text-calidad h1{
+    font-family: 'LuloCleanBold';
+    color: var(--color2);
+    max-width: 550px;
+    font-size: 30px;
+}
+.text-calidad p{
+    max-width: 600px;
+}
+.btn-calidad{
+    border: none;
+    padding: 15px 14px;
+    background-color: var(--color6);
+    color: var(--color2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.4s ease;
+    margin-top: 10px;
+}
+.btn-calidad:hover{
+    background-color: var(--color5);
+    color: var(--color3);
+}
+
+.stats-container{
+    color: var(--color2);
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+.stat-item{
+    margin-top: 40px;
+    margin-left: -15rem;
+
+}
+.stat-item h2{
+    text-align: center;
+    color: var(--color2);
+    font-family: 'LuloCleanBold';
+    font-size: 15px;
+}
+
+
+
+
+
+.men{
+    color: var(--color2);
+    margin: 10px;
+    text-align: center;
+}
+.titulo-menu h2{
+    font-family: 'LuloCleanBold';
+    color: var(--color7);
+    font-size: 14px;
+}
+.titulo-menu h1{
+    font-family: 'LuloCleanBold';
+    font-size: 25px;
+    max-width: 600px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+/*css de menu*/
+.menu {
+    padding: 20px;
+    text-align: center;
+    height: 42rem;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-column {
+    width: 48%; /* Ajusta el ancho de cada columna */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.menu-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu-text {
+    flex-grow: 1;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.menu-text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.menu-text p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0 0;
+}
+
+.menu-price {
+    font-size: 20px;
+    color: #c82b2b;
+    font-weight: bold;
+}
+
+
+
+/*footer*/
+.footer {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('galery/s2.png');
+    height: 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Ajusta la imagen de fondo para que cubra el área */
+    color: white;
+    overflow: hidden;
+    /* Evita que el contenido salga del footer */
+}
+
+/* Capa de color encima del fondo */
+.footer .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 29, 0.904);
+    /* Color y opacidad de la capa */
+    z-index: 1;
+    /* Ubica la capa encima de la imagen de fondo */
+}
+
+.text-footer {
+    position: relative;
+    z-index: 2;
+    /* Coloca el contenido sobre la capa */
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+}
+
+.text-footer h1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contac a {
+    text-decoration: none;
+    color: #ffffffb6;
+    /* Cambia el color del texto para que sea visible sobre el fondo oscuro */
+    transition: color 0.3s ease;
+}
+
+.contac a:hover {
+    color: #FFFFFF;
+}
+
+
+.title-footer-logo {
+    display: flex;
+    padding: 0px 70px;
+    margin-top: -26px;
+    line-height: 30px;
+}
+
+.icon {
+    font-size: 20px;
+    margin: 15px;
+    padding: 10px 10px;
+    color: #ffffff8a;
+    border: 1px solid #ffffff8a;
+    border-radius: 50%;
+    transition: color 1s ease;
+    text-decoration: none;
+}
+
+.icon:hover {
+    background-color: #FFFFFF;
+    color: black;
+
+}
+
+.salud {
+    font-weight: bold;
+}
+
+.descrip-footer {
+    color: #FFFFFF;
+    max-width: 450px;
+    margin-right: 250px;
+}
+
+.descrip-footer img {
+    width: 50px;
+}
+
+
+
+
+.scroll-container {
+    padding: 10px;
+    position: fixed;
+    border: none;
+    left: 95%;
+    top: 91%;
+    z-index: 1000;
+    display: none;
+}
+.scroll-container button {
+    background-color: transparent;
+    color: var(--color7);
+    border-radius: 50%;
+    font-size: 30px;
+    border: 2px solid var(--color7);
+    cursor: pointer;
+}
